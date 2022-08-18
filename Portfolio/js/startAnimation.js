@@ -5,4 +5,4 @@ function spiner(){
     div2.classList.remove('hidden');
 }
 
-setTimeout(spiner, 100);
+setTimeout(spiner, 5000);

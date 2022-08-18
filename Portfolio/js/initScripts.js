@@ -1,12 +1,11 @@
 function init(){
     initPortfolio();
     initObserver();
-   // inactivityTime();
-   getFact();
+    inactivityTime();
+    getFact();
 
    initProgressPortfolio();
    initProgressAbout();
    initProgressContact();
    initProgresBlog();
-   
 }
