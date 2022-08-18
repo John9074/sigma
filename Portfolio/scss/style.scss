@@ -36,7 +36,7 @@ body{
 
 .progress{
     height: 15px;
-    background-color: orange;
+    background-color: rgb(39, 36, 31);
 }
 .progressHidden{
     opacity: 0;
@@ -596,7 +596,7 @@ input, textarea {
   }
 }
 .contact__small{
-    margin-bottom: 17px;
+    margin-bottom: 12px;
     height: 74px;
     border-radius: 4px;
     font-size: 23px;
@@ -748,7 +748,7 @@ h3{
         width: 90px;
     }
     .slider{
-        height:1000px;
+        height:840px;
     }
     .slider__container{
         padding-top: 24px;
@@ -763,26 +763,30 @@ h3{
         margin-top:20px;
     }
     .btn-toggle{
-        font-size: 12px;
+        font-size: 10px;
+        margin-top: 3px;
+    }
+    .progress{
+        height: 5px;
     }
     .banner{
-        height: 600px;
+        height: 475px;
         margin-top: 10px;
     }
     .banner__item{
-        height: 500px;
+        height: 400px;
     }
     .banner__img{
-        max-height: 200px;
+        max-width: 600px;
     }
     .banner__header{
-        font-size: 22px;
+        font-size: 18px;
     }
     .slider__firstRow{
-        font-size: 30px;
+        font-size: 20px;
     }
     .slider__secondRow{
-        font-size: 30px;
+        font-size: 20px;
     }
     .slider__innitation{
         margin-top: 20px;
@@ -819,6 +823,7 @@ h3{
     .columns__text{
         font-size: 12px;
         margin-top: 20px;
+        line-height: 18px;
         .about{
             height: 100%;
         }
@@ -870,7 +875,11 @@ h3{
     }
     }
 //-------------------------------------------------------------
+.blog__stories{
+    margin-top: 10px;
+}
 
+//------------------------------------------------------------
 .footer__twitter,.footer__fb,.footer__gplus,.footer__pinterest,.footer__linkedin{
     width: 80px;
     height: 80px;
@@ -883,4 +892,13 @@ h3{
 h3{
     font-size: 20px;
 }
-.lineTop
+.menu__lineHeader{
+    bottom: 10px;
+}
+
+.lineTop{
+    top: 10px;
+}
+.lineBottom{
+    bottom: 10px;
+}

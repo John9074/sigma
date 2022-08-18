@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="css/resset_style.css">
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="scss/style.css">
-    <script src="/js/slider.js"></script>
-    <script src="/js/portfolio.js"></script>
-    <script src="/js/contact.js"></script>
-    <script src="/js/animationBlog.js"></script>
-    <script src="/js/initScripts.js"></script>
-    <script src="/js/question.js"></script>
-    <script src="/js/startAnimation.js"></script>
-    <script src="/js/api.js"></script>
-    <script src="/js/progressBar.js"></script>
-    <script src="/js/changeTheme.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/animationBlog.js"></script>
+    <script src="js/initScripts.js"></script>
+    <script src="js/question.js"></script>
+    <script src="js/startAnimation.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/progressBar.js"></script>
+    <script src="js/changeTheme.js"></script>
     <title>Document</title>
 </head>
 
@@ -31,19 +31,27 @@
         <div class="rect3"></div>
         <div class="rect4"></div>
         <div class="rect5"></div>
-      </div>
+    </div>
     <div id="main" class="hidden">
         <header id="changeHeader" class="header">
             <div class="header__container">
-                
+
                 <div onclick="changeTheme()" class="btn-toggle">&#9728; Change theme</div>
-                <nav  class="menu">
+                <nav class="menu">
                     <ul id="changeMenu" class="menu__list">
-                        <li   class="menu__item"><a href=""  class="menu__link">ABOUT ME</a><div id="aboutProg" class="progress progressHidden"></div></li>
-                        <li class="menu__item"><a href="" class="menu__link">PORTFOLIO</a><div id="potfolioProg" class="progress progressHidden "></div></li>
+                        <li class="menu__item"><a href="#about" class="menu__link">ABOUT ME</a>
+                            <div id="aboutProg" class="progress progressHidden"></div>
+                        </li>
+                        <li class="menu__item"><a href="#portfolio" class="menu__link">PORTFOLIO</a>
+                            <div id="potfolioProg" class="progress progressHidden "></div>
+                        </li>
                         <li class="menu__imageContainer"><img src="icons/JD.png" alt="proto" class="menu__logo"></li>
-                        <li class="menu__item"><a href="" class="menu__link">MY BLOG</a><div id="contactProg" class="progress progressHidden"></div></li>
-                        <li class="menu__item"><a href="" class="menu__link">CONTACT ME</a><div id="blogProg" class="progress progressHidden"></div></li>
+                        <li class="menu__item"><a href="#contact" class="menu__link">MY BLOG</a>
+                            <div id="contactProg" class="progress progressHidden"></div>
+                        </li>
+                        <li class="menu__item"><a href="#blog" class="menu__link">CONTACT ME</a>
+                            <div id="blogProg" class="progress progressHidden"></div>
+                        </li>
                     </ul>
                 </nav>
                 <div class="menu__lineHeader"></div>
@@ -62,13 +70,13 @@
                     <div class="banner__item">
                         <div onclick="leftArrowClick()" class="banner__arrowLeft">
                             <div class="banner__sign">
-                                <</div>
+                                &lt;</div>
                             </div>
                             <div class="banner__imageContainer">
-                                <img id="imageSlider" src="/image/chess.png" alt="proto" class="banner__img">
+                                <img id="imageSlider" src="image/chess.png" alt="proto" class="banner__img">
                             </div>
                             <div onclick="rightArrowClick()" class="banner__arrowRight">
-                                <div class="banner__sign">></div>
+                                <div class="banner__sign">&gt;  </div>
                             </div>
                         </div>
                         <p class="banner__header">KODAK CAMERA</p>
@@ -81,6 +89,7 @@
                 <div class="lineBottom"></div>
         </section>
         <section id="changeAbout" class="about">
+            <a name="about"></a>
             <div id="about" class="about__container">
                 <div class="lineTop"></div>
                 <div class="repeatHeader">
@@ -104,7 +113,7 @@
                             users selfexpre</div>
                     </div>
                     <div class="columns">
-                        <div class="columns__logo"><img class="columns__music" src="/icons/vinyl.png" alt="proto"></div>
+                        <div class="columns__logo"><img class="columns__music" src="icons/vinyl.png" alt="proto"></div>
                         <div class="columns__header">MUSIC</div>
                         <div class="columns__subHeader">WHAT I LISTEN</div>
                         <div class="dividerBlack"></div>
@@ -114,7 +123,7 @@
                             users selfexpre</div>
                     </div>
                     <div class="columns">
-                        <div class="columns__logo"><img class="columns__clothes" src="/icons/t-shirt.png" alt="proto">
+                        <div class="columns__logo"><img class="columns__clothes" src="icons/t-shirt.png" alt="proto">
                         </div>
                         <div class="columns__header">CLOTHES</div>
                         <div class="columns__subHeader">WHAT I WEAR</div>
@@ -125,7 +134,7 @@
                             users selfexpre</div>
                     </div>
                     <div class="columns">
-                        <div class="columns__logo"><img class="columns__food" src="/icons/food.png" alt="proto"></div>
+                        <div class="columns__logo"><img class="columns__food" src="icons/food.png" alt="proto"></div>
                         <div class="columns__header">FOOD</div>
                         <div class="columns__subHeader">WHAT I EAT</div>
                         <div class="dividerBlack"></div>
@@ -139,6 +148,7 @@
             </div>
         </section>
         <section id="changePortfolio" class="portfolio">
+            <a name="portfolio"></a>
             <div id="portfolio" class="portfolio__container">
                 <div class="lineTop"></div>
                 <div class="repeatHeader">
@@ -154,7 +164,6 @@
                     <div class="filter__promo">Filter by</div>
                 </div>
                 <div id="portfolioProjects" class="portfolio__projects">
-
                 </div>
                 <div class="reset">BROWSE ALL</div>
                 <div class="dividerBlack"></div>
@@ -162,7 +171,8 @@
             </div>
         </section>
         <section id="changeBlog" class="blog">
-            <div id="blog"  class="blog__container">
+            <a name="blog"></a>
+            <div id="blog" class="blog__container">
                 <div class="lineTop"></div>
                 <div class="repeatHeader">
                     <h2>MY BLOG</h2>
@@ -175,7 +185,7 @@
                 </div>
                 <div class="blog__stories">
                     <div class="stories element-animation">
-                        <div class="stories__screen"><img class="stories__photo" src="/image/blog/wheel.jpg"
+                        <div class="stories__screen"><img class="stories__photo" src="image/blog/wheel.jpg"
                                 alt="proto"></div>
                         <div class="stories__content">
                             <div class="content__header">The Magic Wheel</div>
@@ -192,7 +202,7 @@
                         </div>
                     </div>
                     <div class="stories element-animation">
-                        <div class="stories__screen"><img class="stories__photo" src="/image/blog/road.jpeg"
+                        <div class="stories__screen"><img class="stories__photo" src="image/blog/road.jpeg"
                                 alt="proto"></div>
                         <div class="stories__content">
                             <div class="content__header">The lonely road</div>
@@ -209,7 +219,7 @@
                         </div>
                     </div>
                     <div class="stories element-animation ">
-                        <div class="stories__screen"><img class="stories__photo" src="/image/blog/Gas.jpg" alt="proto">
+                        <div class="stories__screen"><img class="stories__photo" src="image/blog/Gas.jpg" alt="proto">
                         </div>
                         <div class="stories__content">
                             <div class="content__header">I love gasoline smell</div>
@@ -224,28 +234,11 @@
                                 their precious turfpossess</div>
                         </div>
                     </div>
-                    <!-- <div class="stories element-appearance">
-                        <div class="stories__screen"><img class="stories__photo" src="" alt="proto"></div>
-                        <div class="stories__content">
-                            <div class="content__header">The Magic Wheel</div>
-                            <div class="content__info">
-                                <div class="content__descr">JULY 28, 2014 // ADMIN // FUN, TRAVEL, TRENDS</div>
-                                <div class="content__response">1 RESPONSE</div>
-                            </div>
-                            <div id="left" class="divider"></div>
-                            <div class="content__text">It’s not it to understand them in the objects we’re playing.
-                                PrIt’s not it to understand them in the objects we’re playing. PrIt’s not it to
-                                understand them in the objects we’re playing. PrIt’s not it to understand them in the
-                                objects we’re playing. PrIt’s not it to understand them in the objects we’re playing. Pr
-                            </div>
-                        </div>
-                    </div> -->
                     <div id="reset" onclick="showAll()" class="reset">BROWSE ALL</div>
-
                     <div class="dividerBlack"></div>
                     <div class="lineBottom"></div>
                     <div class="stories element-appearance">
-                        <div class="stories__screen"><img class="stories__photo" src="/image/blog/car.jpg" alt="proto">
+                        <div class="stories__screen"><img class="stories__photo" src="image/blog/car.jpg" alt="proto">
                         </div>
                         <div class="stories__content">
                             <div class="content__header">The truck travel</div>
@@ -278,7 +271,7 @@
                         </div>
                     </div>
                     <div class="stories element-appearance">
-                        <div class="stories__screen"><img class="stories__photo" src="/image/blog/cat.jpg" alt="proto">
+                        <div class="stories__screen"><img class="stories__photo" src="image/blog/cat.jpg" alt="proto">
                         </div>
                         <div class="stories__content">
                             <div class="content__header">My cat</div>
@@ -295,7 +288,7 @@
                         </div>
                     </div>
                     <div class="stories element-appearance">
-                        <div class="stories__screen"><img class="stories__photo" src="/image/blog/city.jpg" alt="proto">
+                        <div class="stories__screen"><img class="stories__photo" src="image/blog/city.jpg" alt="proto">
                         </div>
                         <div class="stories__content">
                             <div class="content__header">My favorite city</div>
@@ -312,7 +305,7 @@
                         </div>
                     </div>
                     <div class="stories element-appearance">
-                        <div class="stories__screen"><img class="stories__photo" src="/image/blog/space-.jpg"
+                        <div class="stories__screen"><img class="stories__photo" src="image/blog/space-.jpg"
                                 alt="proto"></div>
                         <div class="stories__content">
                             <div class="content__header">I want to go to space</div>
@@ -329,7 +322,7 @@
                         </div>
                     </div>
                     <div class="stories element-appearance">
-                        <div class="stories__screen"><img class="stories__photo" src="/image/blog/monkey.jpg"
+                        <div class="stories__screen"><img class="stories__photo" src="image/blog/monkey.jpg"
                                 alt="proto"></div>
                         <div class="stories__content">
                             <div class="content__header">Getting to know monkeys</div>
@@ -346,7 +339,7 @@
                         </div>
                     </div>
                     <div class="stories element-appearance">
-                        <div class="stories__screen"><img class="stories__photo" src="/image/blog/dog.jpg" alt="proto">
+                        <div class="stories__screen"><img class="stories__photo" src="image/blog/dog.jpg" alt="proto">
                         </div>
                         <div class="stories__content">
                             <div class="content__header">Neigbor dog</div>
@@ -363,7 +356,7 @@
                         </div>
                     </div>
                     <div class="stories element-appearance">
-                        <div class="stories__screen"><img class="stories__photo" src="/image/blog/" alt="proto"></div>
+                        <div class="stories__screen"><img class="stories__photo" src="image/blog/" alt="proto"></div>
                         <div class="stories__content">
                             <div class="content__header">The Magic Wheel</div>
                             <div class="content__info">
@@ -379,7 +372,7 @@
                         </div>
                     </div>
                     <div class="stories element-appearance">
-                        <div class="stories__screen"><img class="stories__photo" src="/image/blog/crez.jpg" alt="proto">
+                        <div class="stories__screen"><img class="stories__photo" src="image/blog/crez.jpg" alt="proto">
                         </div>
                         <div class="stories__content">
                             <div class="content__header">Very usefull thing</div>
@@ -396,7 +389,7 @@
                         </div>
                     </div>
                     <div class="stories element-appearance">
-                        <div class="stories__screen"><img class="stories__photo" src="/image/blog/football.jpg"
+                        <div class="stories__screen"><img class="stories__photo" src="image/blog/football.jpg"
                                 alt="proto"></div>
                         <div class="stories__content">
                             <div class="content__header">The best game</div>
@@ -413,7 +406,7 @@
                         </div>
                     </div>
                     <div class="stories element-appearance">
-                        <div class="stories__screen"><img class="stories__photo" src="/image/blog/fruits.jpg"
+                        <div class="stories__screen"><img class="stories__photo" src="image/blog/fruits.jpg"
                                 alt="proto"></div>
                         <div class="stories__content">
                             <div class="content__header">What i always want to eat</div>
@@ -431,7 +424,7 @@
                     </div>
                     <div class="stories element-appearance">
                         <div class="stories__screen"><img class="stories__photo"
-                                src="/image/blog/generacija-sluchajnogo-sobytija.png" alt="proto"></div>
+                                src="image/blog/generacija-sluchajnogo-sobytija.png" alt="proto"></div>
                         <div class="stories__content">
                             <div class="content__header">Random</div>
                             <div class="content__info">
@@ -447,7 +440,7 @@
                         </div>
                     </div>
                     <div class="stories element-appearance">
-                        <div class="stories__screen"><img class="stories__photo" src="/image/blog/house.jpg"
+                        <div class="stories__screen"><img class="stories__photo" src="image/blog/house.jpg"
                                 alt="proto"></div>
                         <div class="stories__content">
                             <div class="content__header">My dream</div>
@@ -464,7 +457,7 @@
                         </div>
                     </div>
                     <div class="stories element-appearance">
-                        <div class="stories__screen"><img class="stories__photo" src="/image/blog/monkey.jpg"
+                        <div class="stories__screen"><img class="stories__photo" src="image/blog/monkey.jpg"
                                 alt="proto"></div>
                         <div class="stories__content">
                             <div class="content__header">getting to know the monkey</div>
@@ -481,7 +474,7 @@
                         </div>
                     </div>
                     <div class="stories element-appearance">
-                        <div class="stories__screen"><img class="stories__photo" src="/image/blog/pizza.jpg"
+                        <div class="stories__screen"><img class="stories__photo" src="image/blog/pizza.jpg"
                                 alt="proto"></div>
                         <div class="stories__content">
                             <div class="content__header">Pizza-day!</div>
@@ -498,7 +491,7 @@
                         </div>
                     </div>
                     <div class="stories element-appearance">
-                        <div class="stories__screen"><img class="stories__photo" src="/image/blog/wood.jpg" alt="proto">
+                        <div class="stories__screen"><img class="stories__photo" src="image/blog/wood.jpg" alt="proto">
                         </div>
                         <div class="stories__content">
                             <div class="content__header">Big problem</div>
@@ -519,6 +512,7 @@
             </div>
         </section>
         <section id="changeContact" class="contact">
+            <a name="contact"></a>
             <div id="contact" class="contact__container">
                 <div class="lineTop"></div>
                 <div class="repeatHeader">

@@ -1,36 +1,36 @@
 let items = [{
-    imagePath:'/image/Adam Sandoval.png',
-    iconPath:'/icons/gallery.png',
+    imagePath:'image/Adam Sandoval.png',
+    iconPath:'icons/gallery.png',
     name:'Adam Sandoval',
     filter:'Adam Sandoval'
 },
 {
-    imagePath:'/image/Bleak.png',
-    iconPath:'/icons/clip.png',
+    imagePath:'image/Bleak.png',
+    iconPath:'icons/clip.png',
     name:'Bleak',
     filter:'Bleak'
 },
 {
-    imagePath:'/image/Samuel Scalzo.png',
-    iconPath:'/icons/note.png',
+    imagePath:'image/Samuel Scalzo.png',
+    iconPath:'icons/note.png',
     name:'Samuel Scalzo',
     filter:'Samuel Scalzo'
 },
 {
-    imagePath:'/image/ukko.png',
-    iconPath:'/icons/sound.png',
+    imagePath:'image/ukko.png',
+    iconPath:'icons/sound.png',
     name:'ukko',
     filter:'ukko'
 },
 {
-    imagePath:'/image/neuebel_mark.png',
-    iconPath:'/icons/tvLogo.png',
+    imagePath:'image/neuebel_mark.png',
+    iconPath:'icons/tvLogo.png',
     name:'neuebel_mark',
     filter:'neuebel_mark'
 },
 {
-    imagePath:'/image/blon.png',
-    iconPath:'/icons/clip.png',
+    imagePath:'image/blon.png',
+    iconPath:'icons/clip.png',
     name:'blon',
     filter:'blon' 
 },
