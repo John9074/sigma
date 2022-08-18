@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/resset_style.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="scss/style.css">
+    <script src="/js/slider.js"></script>
+    <script src="/js/portfolio.js"></script>
+    <script src="/js/contact.js"></script>
+    <script src="/js/animationBlog.js"></script>
+    <script src="/js/initScripts.js"></script>
+    <script src="/js/question.js"></script>
+    <script src="/js/startAnimation.js"></script>
+    <script src="/js/api.js"></script>
+    <script src="/js/progressBar.js"></script>
+    <script src="/js/changeTheme.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        window.onload = init;
+    </script>
+    <div id="spinner" class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+      </div>
+    <div id="main" class="hidden">
+        <header id="changeHeader" class="header">
+            <div class="header__container">
+                
+                <div onclick="changeTheme()" class="btn-toggle">&#9728; Change theme</div>
+                <nav  class="menu">
+                    <ul id="changeMenu" class="menu__list">
+                        <li   class="menu__item"><a href=""  class="menu__link">ABOUT ME</a><div id="aboutProg" class="progress progressHidden"></div></li>
+                        <li class="menu__item"><a href="" class="menu__link">PORTFOLIO</a><div id="potfolioProg" class="progress progressHidden "></div></li>
+                        <li class="menu__imageContainer"><img src="icons/JD.png" alt="proto" class="menu__logo"></li>
+                        <li class="menu__item"><a href="" class="menu__link">MY BLOG</a><div id="contactProg" class="progress progressHidden"></div></li>
+                        <li class="menu__item"><a href="" class="menu__link">CONTACT ME</a><div id="blogProg" class="progress progressHidden"></div></li>
+                    </ul>
+                </nav>
+                <div class="menu__lineHeader"></div>
+            </div>
+        </header>
+        <section id="changeSlider" class="slider">
+            <div class="slider__container">
+                <div class="slider__fact">
+                    <div class="slider__defolt">Tooday in history:</div>
+                    <div id="fact" class="slider__query"></div>
+                </div>
+                <div class="lineTop"></div>
+                <h1 id="changeH1" class="slider__head">RETRO</h1>
+                <div class="slider__ribon">OLD STYLE PORTFOLIO</div>
+                <div class="banner">
+                    <div class="banner__item">
+                        <div onclick="leftArrowClick()" class="banner__arrowLeft">
+                            <div class="banner__sign">
+                                <</div>
+                            </div>
+                            <div class="banner__imageContainer">
+                                <img id="imageSlider" src="/image/chess.png" alt="proto" class="banner__img">
+                            </div>
+                            <div onclick="rightArrowClick()" class="banner__arrowRight">
+                                <div class="banner__sign">></div>
+                            </div>
+                        </div>
+                        <p class="banner__header">KODAK CAMERA</p>
+                    </div>
+                </div>
+                <div class="slider__innitation">
+                    <p class="slider__firstRow">“HELLO, I AM JOHN DOE</p>
+                    <p class="slider__secondRow">WELCOME TO RETRO, MY WONDERFUL THEME!”</p>
+                </div>
+                <div class="lineBottom"></div>
+        </section>
+        <section id="changeAbout" class="about">
+            <div id="about" class="about__container">
+                <div class="lineTop"></div>
+                <div class="repeatHeader">
+                    <h2>ABOUT ME</h2>
+                    <div class="separator">
+                        <div class="lineBlock"></div>
+                        <div class="cross">x x x</div>
+                        <div class="lineBlock"></div>
+                    </div>
+                    <p class="introduce">I AM A GRAPHIC DESIGNER FROM BALTIMORE</p>
+                </div>
+                <div class="about__content">
+                    <div class="columns">
+                        <div><img class="columns__movies" src="icons/tv.png" alt="proto"></div>
+                        <div class="columns__header">MOVIES</div>
+                        <div class="columns__subHeader">WHAT I WATCH</div>
+                        <div class="dividerBlack"></div>
+                        <div class="columns__text">Clutter is honest! I do believe that has to the users
+                            selfexpreClutter is honest! I do believe that has to the users selfexpreClutter is honest! I
+                            do believe that has to the users selfexpreClutter is honest! I do believe that has to the
+                            users selfexpre</div>
+                    </div>
+                    <div class="columns">
+                        <div class="columns__logo"><img class="columns__music" src="/icons/vinyl.png" alt="proto"></div>
+                        <div class="columns__header">MUSIC</div>
+                        <div class="columns__subHeader">WHAT I LISTEN</div>
+                        <div class="dividerBlack"></div>
+                        <div class="columns__text">Clutter is honest! I do believe that has to the users
+                            selfexpreClutter is honest! I do believe that has to the users selfexpreClutter is honest! I
+                            do believe that has to the users selfexpreClutter is honest! I do believe that has to the
+                            users selfexpre</div>
+                    </div>
+                    <div class="columns">
+                        <div class="columns__logo"><img class="columns__clothes" src="/icons/t-shirt.png" alt="proto">
+                        </div>
+                        <div class="columns__header">CLOTHES</div>
+                        <div class="columns__subHeader">WHAT I WEAR</div>
+                        <div class="dividerBlack"></div>
+                        <div class="columns__text">Clutter is honest! I do believe that has to the users
+                            selfexpreClutter is honest! I do believe that has to the users selfexpreClutter is honest! I
+                            do believe that has to the users selfexpreClutter is honest! I do believe that has to the
+                            users selfexpre</div>
+                    </div>
+                    <div class="columns">
+                        <div class="columns__logo"><img class="columns__food" src="/icons/food.png" alt="proto"></div>
+                        <div class="columns__header">FOOD</div>
+                        <div class="columns__subHeader">WHAT I EAT</div>
+                        <div class="dividerBlack"></div>
+                        <div class="columns__text">Clutter is honest! I do believe that has to the users
+                            selfexpreClutter is honest! I do believe that has to the users selfexpreClutter is honest! I
+                            do believe that has to the users selfexpreClutter is honest! I do believe that has to the
+                            users selfexpre</div>
+                    </div>
+                </div>
+                <div class="lineBottom"></div>
+            </div>
+        </section>
+        <section id="changePortfolio" class="portfolio">
+            <div id="portfolio" class="portfolio__container">
+                <div class="lineTop"></div>
+                <div class="repeatHeader">
+                    <h2>PORTFOLIO</h2>
+                    <div class="separator">
+                        <div class="lineBlock"></div>
+                        <div class="cross">x x x</div>
+                        <div class="lineBlock"></div>
+                    </div>
+                    <p class="introduce">SIMPLICITY IS THE ULTIMATE SOPHISTICATION</p>
+                </div>
+                <div id="portfolioFilters" class="portfolio__filter">
+                    <div class="filter__promo">Filter by</div>
+                </div>
+                <div id="portfolioProjects" class="portfolio__projects">
+
+                </div>
+                <div class="reset">BROWSE ALL</div>
+                <div class="dividerBlack"></div>
+                <div class="lineBottom"></div>
+            </div>
+        </section>
+        <section id="changeBlog" class="blog">
+            <div id="blog"  class="blog__container">
+                <div class="lineTop"></div>
+                <div class="repeatHeader">
+                    <h2>MY BLOG</h2>
+                    <div class="separator">
+                        <div class="lineBlock"></div>
+                        <div class="cross">x x x</div>
+                        <div class="lineBlock"></div>
+                    </div>
+                    <p class="introduce">SIMPLICITY IS THE ULTIMATE SOPHISTICATION</p>
+                </div>
+                <div class="blog__stories">
+                    <div class="stories element-animation">
+                        <div class="stories__screen"><img class="stories__photo" src="/image/blog/wheel.jpg"
+                                alt="proto"></div>
+                        <div class="stories__content">
+                            <div class="content__header">The Magic Wheel</div>
+                            <div class="content__info">
+                                <div class="content__descr">JULY 28, 2014 // ADMIN // FUN, TRAVEL, TRENDS</div>
+                                <div class="content__response">1 RESPONSE</div>
+                            </div>
+                            <div id="left" class="dividerBlack"></div>
+                            <div class="content__text">It’s not it to understand them in the objects we’re playing.
+                                PrIt’s not it to understand them in the objects we’re playing. PrIt’s not it to
+                                understand them in the objects we’re playing. PrIt’s not it to understand them in the
+                                objects we’re playing. PrIt’s not it to understand them in the objects we’re playing. Pr
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stories element-animation">
+                        <div class="stories__screen"><img class="stories__photo" src="/image/blog/road.jpeg"
+                                alt="proto"></div>
+                        <div class="stories__content">
+                            <div class="content__header">The lonely road</div>
+                            <div class="content__info">
+                                <div class="content__descr">JULY 28, 2014 // ADMIN // FUN, TRAVEL, TRENDS, WEB DESIGN
+                                </div>
+                                <div class="content__response">3 RESPONSES</div>
+                            </div>
+                            <div id="left" class="dividerBlack"></div>
+                            <div class="content__text">If you’ve studied design at all, you’ve probably encountered LoIf
+                                you’ve studied design at all, you’ve probably encountered LoIf you’ve studied design at
+                                all, you’ve probably encountered LoIf you’ve studied design at all, you’ve probably
+                                encountered Lo</div>
+                        </div>
+                    </div>
+                    <div class="stories element-animation ">
+                        <div class="stories__screen"><img class="stories__photo" src="/image/blog/Gas.jpg" alt="proto">
+                        </div>
+                        <div class="stories__content">
+                            <div class="content__header">I love gasoline smell</div>
+                            <div class="content__info">
+                                <div class="content__descr">JULY 28, 2014 // ADMIN // FUN, TRENDS, WEB DESIGN</div>
+                                <div class="content__response">NO RESPONSES</div>
+                            </div>
+                            <div id="left" class="dividerBlack"></div>
+                            <div class="content__text">Many of the content, and often about their precious
+                                turfpossessMany of the content, and often about their precious turfpossessMany of the
+                                content, and often about their precious turfpossessMany of the content, and often about
+                                their precious turfpossess</div>
+                        </div>
+                    </div>
+                    <!-- <div class="stories element-appearance">
+                        <div class="stories__screen"><img class="stories__photo" src="" alt="proto"></div>
+                        <div class="stories__content">
+                            <div class="content__header">The Magic Wheel</div>
+                            <div class="content__info">
+                                <div class="content__descr">JULY 28, 2014 // ADMIN // FUN, TRAVEL, TRENDS</div>
+                                <div class="content__response">1 RESPONSE</div>
+                            </div>
+                            <div id="left" class="divider"></div>
+                            <div class="content__text">It’s not it to understand them in the objects we’re playing.
+                                PrIt’s not it to understand them in the objects we’re playing. PrIt’s not it to
+                                understand them in the objects we’re playing. PrIt’s not it to understand them in the
+                                objects we’re playing. PrIt’s not it to understand them in the objects we’re playing. Pr
+                            </div>
+                        </div>
+                    </div> -->
+                    <div id="reset" onclick="showAll()" class="reset">BROWSE ALL</div>
+
+                    <div class="dividerBlack"></div>
+                    <div class="lineBottom"></div>
+                    <div class="stories element-appearance">
+                        <div class="stories__screen"><img class="stories__photo" src="/image/blog/car.jpg" alt="proto">
+                        </div>
+                        <div class="stories__content">
+                            <div class="content__header">The truck travel</div>
+                            <div class="content__info">
+                                <div class="content__descr">JULY 28, 2014 // ADMIN // FUN, TRAVEL, TRENDS</div>
+                                <div class="content__response">1 RESPONSE</div>
+                            </div>
+                            <div id="left" class="dividerBlack"></div>
+                            <div class="content__text">It’s not it to understand them in the objects we’re playing.
+                                PrIt’s not it to understand them in the objects we’re playing. PrIt’s not it to
+                                understand them in the objects we’re playing. PrIt’s not it to understand them in the
+                                objects we’re playing. PrIt’s not it to understand them in the objects we’re playing. Pr
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stories element-appearance">
+                        <div class="stories__screen"><img class="stories__photo" src="" alt="proto"></div>
+                        <div class="stories__content">
+                            <div class="content__header">The Magic Wheel</div>
+                            <div class="content__info">
+                                <div class="content__descr">JULY 28, 2014 // ADMIN // FUN, TRAVEL, TRENDS</div>
+                                <div class="content__response">1 RESPONSE</div>
+                            </div>
+                            <div id="left" class="dividerBlack"></div>
+                            <div class="content__text">It’s not it to understand them in the objects we’re playing.
+                                PrIt’s not it to understand them in the objects we’re playing. PrIt’s not it to
+                                understand them in the objects we’re playing. PrIt’s not it to understand them in the
+                                objects we’re playing. PrIt’s not it to understand them in the objects we’re playing. Pr
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stories element-appearance">
+                        <div class="stories__screen"><img class="stories__photo" src="/image/blog/cat.jpg" alt="proto">
+                        </div>
+                        <div class="stories__content">
+                            <div class="content__header">My cat</div>
+                            <div class="content__info">
+                                <div class="content__descr">JULY 28, 2014 // ADMIN // FUN, TRAVEL, TRENDS</div>
+                                <div class="content__response">1 RESPONSE</div>
+                            </div>
+                            <div id="left" class="dividerBlack"></div>
+                            <div class="content__text">It’s not it to understand them in the objects we’re playing.
+                                PrIt’s not it to understand them in the objects we’re playing. PrIt’s not it to
+                                understand them in the objects we’re playing. PrIt’s not it to understand them in the
+                                objects we’re playing. PrIt’s not it to understand them in the objects we’re playing. Pr
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stories element-appearance">
+                        <div class="stories__screen"><img class="stories__photo" src="/image/blog/city.jpg" alt="proto">
+                        </div>
+                        <div class="stories__content">
+                            <div class="content__header">My favorite city</div>
+                            <div class="content__info">
+                                <div class="content__descr">JULY 28, 2014 // ADMIN // FUN, TRAVEL, TRENDS</div>
+                                <div class="content__response">1 RESPONSE</div>
+                            </div>
+                            <div id="left" class="dividerBlack"></div>
+                            <div class="content__text">It’s not it to understand them in the objects we’re playing.
+                                PrIt’s not it to understand them in the objects we’re playing. PrIt’s not it to
+                                understand them in the objects we’re playing. PrIt’s not it to understand them in the
+                                objects we’re playing. PrIt’s not it to understand them in the objects we’re playing. Pr
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stories element-appearance">
+                        <div class="stories__screen"><img class="stories__photo" src="/image/blog/space-.jpg"
+                                alt="proto"></div>
+                        <div class="stories__content">
+                            <div class="content__header">I want to go to space</div>
+                            <div class="content__info">
+                                <div class="content__descr">JULY 28, 2014 // ADMIN // FUN, TRAVEL, TRENDS</div>
+                                <div class="content__response">1 RESPONSE</div>
+                            </div>
+                            <div id="left" class="dividerBlack"></div>
+                            <div class="content__text">It’s not it to understand them in the objects we’re playing.
+                                PrIt’s not it to understand them in the objects we’re playing. PrIt’s not it to
+                                understand them in the objects we’re playing. PrIt’s not it to understand them in the
+                                objects we’re playing. PrIt’s not it to understand them in the objects we’re playing. Pr
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stories element-appearance">
+                        <div class="stories__screen"><img class="stories__photo" src="/image/blog/monkey.jpg"
+                                alt="proto"></div>
+                        <div class="stories__content">
+                            <div class="content__header">Getting to know monkeys</div>
+                            <div class="content__info">
+                                <div class="content__descr">JULY 28, 2014 // ADMIN // FUN, TRAVEL, TRENDS</div>
+                                <div class="content__response">1 RESPONSE</div>
+                            </div>
+                            <div id="left" class="dividerBlack"></div>
+                            <div class="content__text">It’s not it to understand them in the objects we’re playing.
+                                PrIt’s not it to understand them in the objects we’re playing. PrIt’s not it to
+                                understand them in the objects we’re playing. PrIt’s not it to understand them in the
+                                objects we’re playing. PrIt’s not it to understand them in the objects we’re playing. Pr
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stories element-appearance">
+                        <div class="stories__screen"><img class="stories__photo" src="/image/blog/dog.jpg" alt="proto">
+                        </div>
+                        <div class="stories__content">
+                            <div class="content__header">Neigbor dog</div>
+                            <div class="content__info">
+                                <div class="content__descr">JULY 28, 2014 // ADMIN // FUN, TRAVEL, TRENDS</div>
+                                <div class="content__response">1 RESPONSE</div>
+                            </div>
+                            <div id="left" class="dividerBlack"></div>
+                            <div class="content__text">It’s not it to understand them in the objects we’re playing.
+                                PrIt’s not it to understand them in the objects we’re playing. PrIt’s not it to
+                                understand them in the objects we’re playing. PrIt’s not it to understand them in the
+                                objects we’re playing. PrIt’s not it to understand them in the objects we’re playing. Pr
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stories element-appearance">
+                        <div class="stories__screen"><img class="stories__photo" src="/image/blog/" alt="proto"></div>
+                        <div class="stories__content">
+                            <div class="content__header">The Magic Wheel</div>
+                            <div class="content__info">
+                                <div class="content__descr">JULY 28, 2014 // ADMIN // FUN, TRAVEL, TRENDS</div>
+                                <div class="content__response">1 RESPONSE</div>
+                            </div>
+                            <div id="left" class="dividerBlack"></div>
+                            <div class="content__text">It’s not it to understand them in the objects we’re playing.
+                                PrIt’s not it to understand them in the objects we’re playing. PrIt’s not it to
+                                understand them in the objects we’re playing. PrIt’s not it to understand them in the
+                                objects we’re playing. PrIt’s not it to understand them in the objects we’re playing. Pr
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stories element-appearance">
+                        <div class="stories__screen"><img class="stories__photo" src="/image/blog/crez.jpg" alt="proto">
+                        </div>
+                        <div class="stories__content">
+                            <div class="content__header">Very usefull thing</div>
+                            <div class="content__info">
+                                <div class="content__descr">JULY 28, 2014 // ADMIN // FUN, TRAVEL, TRENDS</div>
+                                <div class="content__response">1 RESPONSE</div>
+                            </div>
+                            <div id="left" class="dividerBlack"></div>
+                            <div class="content__text">It’s not it to understand them in the objects we’re playing.
+                                PrIt’s not it to understand them in the objects we’re playing. PrIt’s not it to
+                                understand them in the objects we’re playing. PrIt’s not it to understand them in the
+                                objects we’re playing. PrIt’s not it to understand them in the objects we’re playing. Pr
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stories element-appearance">
+                        <div class="stories__screen"><img class="stories__photo" src="/image/blog/football.jpg"
+                                alt="proto"></div>
+                        <div class="stories__content">
+                            <div class="content__header">The best game</div>
+                            <div class="content__info">
+                                <div class="content__descr">JULY 28, 2014 // ADMIN // FUN, TRAVEL, TRENDS</div>
+                                <div class="content__response">1 RESPONSE</div>
+                            </div>
+                            <div id="left" class="dividerBlack"></div>
+                            <div class="content__text">It’s not it to understand them in the objects we’re playing.
+                                PrIt’s not it to understand them in the objects we’re playing. PrIt’s not it to
+                                understand them in the objects we’re playing. PrIt’s not it to understand them in the
+                                objects we’re playing. PrIt’s not it to understand them in the objects we’re playing. Pr
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stories element-appearance">
+                        <div class="stories__screen"><img class="stories__photo" src="/image/blog/fruits.jpg"
+                                alt="proto"></div>
+                        <div class="stories__content">
+                            <div class="content__header">What i always want to eat</div>
+                            <div class="content__info">
+                                <div class="content__descr">JULY 28, 2014 // ADMIN // FUN, TRAVEL, TRENDS</div>
+                                <div class="content__response">1 RESPONSE</div>
+                            </div>
+                            <div id="left" class="dividerBlack"></div>
+                            <div class="content__text">It’s not it to understand them in the objects we’re playing.
+                                PrIt’s not it to understand them in the objects we’re playing. PrIt’s not it to
+                                understand them in the objects we’re playing. PrIt’s not it to understand them in the
+                                objects we’re playing. PrIt’s not it to understand them in the objects we’re playing. Pr
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stories element-appearance">
+                        <div class="stories__screen"><img class="stories__photo"
+                                src="/image/blog/generacija-sluchajnogo-sobytija.png" alt="proto"></div>
+                        <div class="stories__content">
+                            <div class="content__header">Random</div>
+                            <div class="content__info">
+                                <div class="content__descr">JULY 28, 2014 // ADMIN // FUN, TRAVEL, TRENDS</div>
+                                <div class="content__response">1 RESPONSE</div>
+                            </div>
+                            <div id="left" class="dividerBlack"></div>
+                            <div class="content__text">It’s not it to understand them in the objects we’re playing.
+                                PrIt’s not it to understand them in the objects we’re playing. PrIt’s not it to
+                                understand them in the objects we’re playing. PrIt’s not it to understand them in the
+                                objects we’re playing. PrIt’s not it to understand them in the objects we’re playing. Pr
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stories element-appearance">
+                        <div class="stories__screen"><img class="stories__photo" src="/image/blog/house.jpg"
+                                alt="proto"></div>
+                        <div class="stories__content">
+                            <div class="content__header">My dream</div>
+                            <div class="content__info">
+                                <div class="content__descr">JULY 28, 2014 // ADMIN // FUN, TRAVEL, TRENDS</div>
+                                <div class="content__response">1 RESPONSE</div>
+                            </div>
+                            <div id="left" class="dividerBlack"></div>
+                            <div class="content__text">It’s not it to understand them in the objects we’re playing.
+                                PrIt’s not it to understand them in the objects we’re playing. PrIt’s not it to
+                                understand them in the objects we’re playing. PrIt’s not it to understand them in the
+                                objects we’re playing. PrIt’s not it to understand them in the objects we’re playing. Pr
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stories element-appearance">
+                        <div class="stories__screen"><img class="stories__photo" src="/image/blog/monkey.jpg"
+                                alt="proto"></div>
+                        <div class="stories__content">
+                            <div class="content__header">getting to know the monkey</div>
+                            <div class="content__info">
+                                <div class="content__descr">JULY 28, 2014 // ADMIN // FUN, TRAVEL, TRENDS</div>
+                                <div class="content__response">1 RESPONSE</div>
+                            </div>
+                            <div id="left" class="dividerBlack"></div>
+                            <div class="content__text">It’s not it to understand them in the objects we’re playing.
+                                PrIt’s not it to understand them in the objects we’re playing. PrIt’s not it to
+                                understand them in the objects we’re playing. PrIt’s not it to understand them in the
+                                objects we’re playing. PrIt’s not it to understand them in the objects we’re playing. Pr
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stories element-appearance">
+                        <div class="stories__screen"><img class="stories__photo" src="/image/blog/pizza.jpg"
+                                alt="proto"></div>
+                        <div class="stories__content">
+                            <div class="content__header">Pizza-day!</div>
+                            <div class="content__info">
+                                <div class="content__descr">JULY 28, 2014 // ADMIN // FUN, TRAVEL, TRENDS</div>
+                                <div class="content__response">1 RESPONSE</div>
+                            </div>
+                            <div id="left" class="dividerBlack"></div>
+                            <div class="content__text">It’s not it to understand them in the objects we’re playing.
+                                PrIt’s not it to understand them in the objects we’re playing. PrIt’s not it to
+                                understand them in the objects we’re playing. PrIt’s not it to understand them in the
+                                objects we’re playing. PrIt’s not it to understand them in the objects we’re playing. Pr
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stories element-appearance">
+                        <div class="stories__screen"><img class="stories__photo" src="/image/blog/wood.jpg" alt="proto">
+                        </div>
+                        <div class="stories__content">
+                            <div class="content__header">Big problem</div>
+                            <div class="content__info">
+                                <div class="content__descr">JULY 28, 2014 // ADMIN // FUN, TRAVEL, TRENDS</div>
+                                <div class="content__response">1 RESPONSE</div>
+                            </div>
+                            <div id="left" class="dividerBlack"></div>
+                            <div class="content__text">It’s not it to understand them in the objects we’re playing.
+                                PrIt’s not it to understand them in the objects we’re playing. PrIt’s not it to
+                                understand them in the objects we’re playing. PrIt’s not it to understand them in the
+                                objects we’re playing. PrIt’s not it to understand them in the objects we’re playing. Pr
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="changeContact" class="contact">
+            <div id="contact" class="contact__container">
+                <div class="lineTop"></div>
+                <div class="repeatHeader">
+                    <h2>CONTACT ME</h2>
+                    <div class="separator">
+                        <div class="lineBlock"></div>
+                        <div class="cross">x x x</div>
+                        <div class="lineBlock"></div>
+                    </div>
+                    <p class="introduce">NEWS FROM MY HOUSE</p>
+                    <div id="changeForm" class="contact__form">
+                        <div id="name" class="inputBox">
+                            <input id="nameText" class="contact__small" placeholder="Name" type="text">
+                        </div>
+                        <div id="email" class="inputBox">
+                            <input id="nameEmail" class="contact__small" placeholder="Email address" type="email">
+                        </div>
+                        <div id="subject" class="inputBox">
+                            <input id="nameSubject" class="contact__small" placeholder="Subject">
+                        </div>
+                        <textarea id="nameMessage" placeholder="Your message"></textarea>
+                        <input onclick="sendMessage()" class="contact__btn" type="button" value="Send Message">
+                    </div>
+                </div>
+        </section>
+        <footer id="changeFooter" class="footer">
+            <div class="footer__container">
+                <h3 id="changeH3">I AM SOCIAL</h3>
+                <div id="changeDivider" class="dividerWhite "></div>
+                <div class="footer__links">
+                    <a class="footer__twitter" href="https://twitter.com/?lang=uk"></a>
+                    <a class="footer__fb"
+                        href="https://www.facebook.com/campaign/landing.php?&campaign_id=1600506847&extra_1=s%7Cc%7C515922865595%7Ce%7Cfacebook%7C&placement=&creative=515922865595&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D1600506847%26adgroupid%3D60825662376%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D21117%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQjwgO2XBhCaARIsANrW2X1ly7hdzyW4ZwabEx0ZcN3cbwizKXt2HZdJziBoMCT3KxJCfnFmKM8aAv9nEALw_wcB"></a>
+                    <a class="footer__gplus" href="https://www.google.com.ua/?hl=ru"></a>
+                    <a class="footer__pinterest" href="https://ru.pinterest.com/"></a>
+                    <a class="footer__linkedin"
+                        href="https://www.linkedin.com/in/%D0%B4%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B9-%D0%BF%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%BA%D0%BE-6bb143204/"></a>
+                </div>
+                <div class="lineBottom"></div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
